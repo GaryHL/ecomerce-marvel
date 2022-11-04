@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- my styles -->
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>App Space</title>
+  </head>
+
+  <body>
+    <nav class="container_nav">
+      <i class="bi bi-list icon_menu" id="iconMenu"></i>
+      <!-- <input class="search_bar" type="search" /> -->
+      <img class="logo" src="https://see.fontimg.com/api/renderfont4/YolO/eyJyIjoiZnMiLCJoIjoyMDAsInciOjEwMDAsImZzIjoyMDAsImZnYyI6IiNGRkZGRkYiLCJiZ2MiOiIjQTcyMTIxIiwidCI6MX0/TSBBIFIgViBFIEw/avengeance.png" style="height:5vh;">
+
+      <i class="bi bi-cart-fill icon_cart" id="iconCart"></i>
+      <!-- <div class="icon_cart" onClick={()=>setCartActive(!cartActive) }><RiShoppingBasket2Fill/></div> -->
+      <div class="container_menu" id="containerMenu">
+        <i class="bi bi-x-lg close_menu" id="closeMenu" style="color: white"></i>
+      </div>
+      <div class="container_cart" id="containerCart">
+        <i class="bi bi-x-lg close_cart"  id="closeCart" style="color: white"></i>
+        <!-- <h2 class="title_cart_container">Carrito</h2> -->
+        <img src="https://see.fontimg.com/api/renderfont4/YolO/eyJyIjoiZnMiLCJoIjoyMDAsInciOjEwMDAsImZzIjoyMDAsImZnYyI6IiNGRkZGRkYiLCJiZ2MiOiIjQTcyMTIxIiwidCI6MX0/QyBBIFIgUiBJIFQgTw/avengeance.png" alt="logo carrito" class="title_cart_container">
+        <div class="container_products">
+            <ul class="list_products" id="listProducts">
+            </ul>
+        </div>
+        <h2 class="total_price" id="totalPrice">TOTAL PRICE: 84$</h2>
+        <button class="button_sell" id="buttonSell">Realizar pedido</button>
+      </div>
+      <!-- <div className={menuActive ? 'container_menu': 'container_menu active'}> <button onClick={()=> setMenuActive(!menuActive)}></button></div> -->
+      <!-- <div className={cartActive ? 'container_cart': 'container_cart active'}><button onClick={()=> setCartActive(!cartActive)}></button></div> -->
+    </nav>
+    <main>
+      <div class="container_comics" id="containerComics"></div>
+      <div class="container_page_buttons">
+          <button class="button_page" id="prevPage">Prev</button>
+          <button class="button_page" id="nextPage">Next</button>
+      </div>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
